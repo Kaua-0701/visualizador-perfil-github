@@ -7,7 +7,7 @@ export function renderProfile(userData, userRepos, container) {
                     <span>⭐Stars: ${repo.stargazers_count}</span>
                     <span>🍴 Forks: ${repo.forks_count}</span>
                     <span>👀 Watchers: ${repo.watchers_count}</span>
-                    <span>💻 Language: ${repo.stargazers_count}</span>
+                    <span>💻 Language: ${repo.language}</span>
                 </div>
             </div>
         </a> `
