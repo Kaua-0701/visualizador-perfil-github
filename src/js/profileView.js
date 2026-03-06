@@ -7,7 +7,7 @@ export function renderProfile(userData, userRepos, container) {
                     <span>⭐Stars: ${repo.stargazers_count}</span>
                     <span>🍴 Forks: ${repo.forks_count}</span>
                     <span>👀 Watchers: ${repo.watchers_count}</span>
-                    <span>💻 Language: ${repo.language}</span>
+                    <span>💻 Language: ${repo.}</span>
                 </div>
             </div>
         </a> `
@@ -19,7 +19,7 @@ export function renderProfile(userData, userRepos, container) {
             <img src="${userData.avatar_url}" alt="Avatar de ${userData.name}" class="profile-avatar">
 
             <div class="profile-info">
-                <h2>${userData.name}</h2>
+                <h2>${userData.name || 'Não possui nome cadastrado 😢.'}</h2>
                 <p>${userData.bio || 'Não possui biografia cadastrada 😢.'}</p>
             </div>
         </div>
